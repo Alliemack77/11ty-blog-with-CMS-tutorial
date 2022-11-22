@@ -15,6 +15,20 @@ collections:
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"]}
-      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Featured image", name: "image", widget: "image" }
+      - { label: "Image caption", name: "imageAlt", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "projects"
+    label: "Projects"
+    folder: "src/projects"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string" }
+      - { label: "Period", name: "period", widget: "string" }
+      - { label: "Context", name: "context", widget: "string" }
+      - { label: "Role", name: "role", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["project"] }
+      - { label: "Featured image", name: "image", widget: "image" }
       - { label: "Image caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
