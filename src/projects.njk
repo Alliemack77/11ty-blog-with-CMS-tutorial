@@ -1,0 +1,17 @@
+--- 
+
+layout: 'base.njk'
+title: My Coolest Projects
+
+---
+
+
+<div class="section container">
+  <h1 class="section-title">My Latest Work</h1>
+  <ul role="list" class="articles__list flow">
+    {%- for post in collections.project | reverse -%}
+      {% include 'project-snippet.njk' %}
+    {%- endfor -%}
+
+  </ul>
+</div>
